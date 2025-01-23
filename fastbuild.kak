@@ -12,8 +12,8 @@ provide-module fastbuild %{
     add-highlighter shared/fastbuild regions
     add-highlighter shared/fastbuild/code default-region group
     add-highlighter shared/fastbuild/comment region '(//|;)' $ fill comment
-    add-highlighter shared/fastbuild/single_string region "'" "(?<!\\)(?:\\\\)*'" fill string
-    add-highlighter shared/fastbuild/double_string region '"' '(?<!\\)(?:\\\\)*"' fill string
+    add-highlighter shared/fastbuild/single_string region "'" "'" fill string
+    add-highlighter shared/fastbuild/double_string region '"' '"' fill string
 
     add-highlighter shared/fastbuild/code/constant regex "\b[A-Z_]*\b" 0:value
     add-highlighter shared/fastbuild/code/directive regex "#(define|elif|else|endif|if|import|include|once)\b" 0:keyword
