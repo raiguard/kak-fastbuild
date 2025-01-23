@@ -6,6 +6,8 @@ hook global BufCreate .*[.](bff) %{
 
 hook global WinSetOption filetype=fastbuild %{
     require-module fastbuild
+
+    set-option buffer comment_line '//'
 }
 
 provide-module fastbuild %{
